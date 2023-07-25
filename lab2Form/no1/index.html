@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="form-echo.php" method="get">
+        <h1>แบบฟอร์มจองทัวร์</h1>
+        <fieldset style="border: 3px solid black;">
+            <legend><h3>ข้อมูลทั่วไป</h3></legend>
+            <h>ชื่อ-สกุล:</h>
+            <input
+            type="text" required
+            name="ชื่อ-สกุล"
+            placeholder="กรอกชื่อ-สกุล"
+            pattern= "["+thai_alphabet+"]"
+            >
+        </fieldset>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
