@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/fb0f319195.js" crossorigin="anonymous"></script>
+    <style>
+        .flexible{
+           display: inline-flex;
+        }
+        .content{
+            background-color: gainsboro;
+            padding: 20px;
+        }
+        .wrap{
+            text-align: center;
+            padding: auto;           
+        }
+        .botton{
+            color: white;
+            background:midnightblue;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px 32px;            
+            display: inline-block;
+        }
+        @media screen and (max-width: 600px) {
+        div.content{
+            padding: 20px;
+            background-color: lightgray;
+        }
+        div.product{
+            text-align: center;
+        }
+        div.wrap{
+            text-align: center;
+            padding: auto;
+        }
+        div.flexible{
+            display: block;
+        }
+        div.botton{
+            color: white;
+            background-color: midnightblue;
+            text-align: center;
+            padding: 15px 120px;
+            display: inline-block;
+            border-radius: 8px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="flexible">
+        
+		<div class="product">
+            <img src="imgs/clock.jpg">
+        </div>
+
+        <div class="content">
+            Garmin Instinct, Rugged Outdoor Watch with GPS, 
+            Features GLONASS and Galileo, Heart Rate Monitoring and
+            3-axis Compass, Tundra<br><br>
+            <div class="wrap">
+                <a href="">
+                    <div class="botton"><i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>Add to cart</div>
+                </a>
+            </div>
+		</div>
+
+    </div>
+
+</body>
+</html>
