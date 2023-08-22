@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkPassword(){
+            let result = document.getElementById("errormsg")
+            let pass1ip = document.getElementById("pass1")
+            let pass2ip = document.getElementById("pass2")
+            let password1 = pass1ip.value
+            let password2 = pass2ip.value
+            let check = false;
+            if(password1 == password2){
+                check = true
+            }
+            if(check){
+                result.style.color = "green"
+                result.innerHTML = "Correct"
+            }else{
+                result.style.color = "red"
+                result.innerHTML = "Incorrect"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Register</h1>
+    Username: <input type="text"><br>
+    Password: <input type="text" id="pass1"><br>
+    Re-type Password: <input type="text" id="pass2"><br>
+    <input type="submit" onclick="checkPassword()">
+    <div id="errormsg"></div>
+</body>
+</html>

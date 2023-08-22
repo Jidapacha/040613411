@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            let nameip = document.getElementById("name")
+            let ageip = document.getElementById("age")
+            let bdip = document.getElementById("bd")
+            nameip.style.color = "green"
+            ageip.style.color = "green"
+            bdip.style.color = "green"
+        }
+        window.onload = function(){
+            let Form = document.getElementById("form")
+            Form.onmouseout = check()
+        }
+    </script>
+</head>
+<body>
+    <form id="form1">
+        Name: <input type="text" id="name"><br>
+        Age: <input type="text" id="age"><br>
+        Birthdate: <input type="text" id="bd"><br>
+    </form>
+</body>
+</html>
